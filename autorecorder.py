@@ -75,7 +75,7 @@ def socket_loop():
             if msg == 0:  # Stop recording
                 size = struct.unpack("i", recv_exact(sock, 4))[0]
                 map_name = recv_exact(sock, size).decode("utf-8")
-
+                time.sleep(2)
                 print(f"[OBS] Stop recording → {map_name}")
                 stop_and_rename(map_name)
 

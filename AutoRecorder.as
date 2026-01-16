@@ -53,7 +53,7 @@ PluginInfo@ GetPluginInfo()
     auto info = PluginInfo();
     info.Name = "Autorecord";
     info.Author = "Adrien";
-    info.Version = "v0.0.0";
+    info.Version = "v0.0.1";
     info.Description = "Auto records run !!";
     return info;
 }
